@@ -1,0 +1,141 @@
+
+;; Function main (null)
+;; enabled by -tree-original
+
+@1      statement_list   0   : @2       1   : @3      
+@2      bind_expr        type: @4       vars: @5       body: @6      
+@3      return_expr      type: @4       expr: @7      
+@4      void_type        name: @8       algn: 8       
+@5      var_decl         name: @9       type: @10      scpe: @11     
+                         srcp: test.c:3                size: @12     
+                         algn: 32       used: 1       
+@6      statement_list   0   : @13      1   : @14      2   : @15     
+                         3   : @16      4   : @17      5   : @18     
+                         6   : @19      7   : @20      8   : @21     
+                         9   : @22      10  : @23      11  : @24     
+                         12  : @25      13  : @26     
+@7      modify_expr      type: @10      op 0: @27      op 1: @28     
+@8      type_decl        name: @29      type: @4      
+@9      identifier_node  strg: i        lngt: 1       
+@10     integer_type     name: @30      size: @12      algn: 32      
+                         prec: 32       sign: signed   min : @31     
+                         max : @32     
+@11     function_decl    name: @33      type: @34      srcp: test.c:2      
+                         link: extern  
+@12     integer_cst      type: @35     int: 32
+@13     decl_expr        type: @4      
+@14     decl_expr        type: @4      
+@15     decl_expr        type: @4      
+@16     call_expr        type: @10      fn  : @36      0   : @37     
+                         1   : @38     
+@17     modify_expr      type: @10      op 0: @5       op 1: @39     
+@18     modify_expr      type: @10      op 0: @40      op 1: @41     
+@19     goto_expr        type: @4       labl: @42     
+@20     label_expr       type: @4       name: @43     
+@21     modify_expr      type: @10      op 0: @40      op 1: @44     
+@22     modify_expr      type: @10      op 0: @5       op 1: @45     
+@23     label_expr       type: @4       name: @42     
+@24     cond_expr        type: @4       op 0: @46      op 1: @47     
+                         op 2: @48     
+@25     label_expr       type: @4       name: @49     
+@26     call_expr        type: @10      fn  : @50      0   : @51     
+                         1   : @40     
+@27     result_decl      type: @10      scpe: @11      srcp: test.c:2      
+                         note: artificial              size: @12     
+                         algn: 32      
+@28     integer_cst      type: @10     int: 0
+@29     identifier_node  strg: void     lngt: 4       
+@30     type_decl        name: @52      type: @10     
+@31     integer_cst      type: @10     int: -2147483648
+@32     integer_cst      type: @10     int: 2147483647
+@33     identifier_node  strg: main     lngt: 4       
+@34     function_type    unql: @53      size: @54      algn: 8       
+                         retn: @10     
+@35     integer_type     name: @55      size: @56      algn: 128     
+                         prec: 128      sign: unsigned min : @57     
+                         max : @58     
+@36     addr_expr        type: @59      op 0: @60     
+@37     nop_expr         type: @61      op 0: @62     
+@38     addr_expr        type: @63      op 0: @64     
+@39     integer_cst      type: @10     int: 2
+@40     var_decl         name: @65      type: @10      scpe: @11     
+                         srcp: test.c:3                size: @12     
+                         algn: 32       used: 1       
+@41     integer_cst      type: @10     int: 1
+@42     label_decl       type: @4       scpe: @11      note: artificial 
+@43     label_decl       type: @4       scpe: @11      note: artificial 
+@44     mult_expr        type: @10      op 0: @40      op 1: @5      
+@45     plus_expr        type: @10      op 0: @5       op 1: @41     
+@46     le_expr          type: @10      op 0: @5       op 1: @64     
+@47     goto_expr        type: @4       labl: @43     
+@48     goto_expr        type: @4       labl: @49     
+@49     label_decl       type: @4       scpe: @11      note: artificial 
+@50     addr_expr        type: @66      op 0: @67     
+@51     nop_expr         type: @61      op 0: @68     
+@52     identifier_node  strg: int      lngt: 3       
+@53     function_type    size: @54      algn: 8        retn: @10     
+@54     integer_cst      type: @35     int: 8
+@55     identifier_node  strg: bitsizetype             lngt: 11      
+@56     integer_cst      type: @35     int: 128
+@57     integer_cst      type: @35     int: 0
+@58     integer_cst      type: @35     int: -1
+@59     pointer_type     size: @69      algn: 64       ptd : @70     
+@60     function_decl    name: @71      mngl: @72      type: @70     
+                         srcp: stdio.h:398             body: undefined 
+                         link: extern  
+@61     pointer_type     qual:   r      unql: @73      size: @69     
+                         algn: 64       ptd : @74     
+@62     addr_expr        type: @75      op 0: @76     
+@63     pointer_type     size: @69      algn: 64       ptd : @10     
+@64     var_decl         name: @77      type: @10      scpe: @11     
+                         srcp: test.c:3                size: @12     
+                         algn: 32       used: 1       
+@65     identifier_node  strg: f        lngt: 1       
+@66     pointer_type     size: @69      algn: 64       ptd : @78     
+@67     function_decl    name: @79      type: @78      srcp: stdio.h:318    
+                         body: undefined               link: extern  
+@68     addr_expr        type: @80      op 0: @81     
+@69     integer_cst      type: @35     int: 64
+@70     function_type    size: @54      algn: 8        retn: @10     
+                         prms: @82     
+@71     identifier_node  strg: scanf    lngt: 5       
+@72     identifier_node  strg: *__isoc99_scanf         lngt: 15      
+@73     pointer_type     size: @69      algn: 64       ptd : @74     
+@74     integer_type     qual: c        name: @83      unql: @84     
+                         size: @54      algn: 8        prec: 8       
+                         sign: signed   min : @85      max : @86     
+@75     pointer_type     size: @69      algn: 64       ptd : @87     
+@76     string_cst       type: @87     strg: %d       lngt: 3       
+@77     identifier_node  strg: n        lngt: 1       
+@78     function_type    size: @54      algn: 8        retn: @10     
+                         prms: @82     
+@79     identifier_node  strg: printf   lngt: 6       
+@80     pointer_type     size: @69      algn: 64       ptd : @88     
+@81     string_cst       type: @88     strg: %d
+      lngt: 4       
+@82     tree_list        valu: @61     
+@83     type_decl        name: @89      type: @84     
+@84     integer_type     name: @83      size: @54      algn: 8       
+                         prec: 8        sign: signed   min : @85     
+                         max : @86     
+@85     integer_cst      type: @84     int: -128
+@86     integer_cst      type: @84     int: 127
+@87     array_type       size: @90      algn: 8        elts: @84     
+                         domn: @91     
+@88     array_type       size: @12      algn: 8        elts: @84     
+                         domn: @92     
+@89     identifier_node  strg: char     lngt: 4       
+@90     integer_cst      type: @35     int: 24
+@91     integer_type     size: @69      algn: 64       prec: 64      
+                         sign: signed   min : @93      max : @94     
+@92     integer_type     size: @69      algn: 64       prec: 64      
+                         sign: signed   min : @93      max : @95     
+@93     integer_cst      type: @96     int: 0
+@94     integer_cst      type: @96     int: 2
+@95     integer_cst      type: @96     int: 3
+@96     integer_type     name: @97      size: @69      algn: 64      
+                         prec: 64       sign: unsigned min : @93     
+                         max : @98     
+@97     identifier_node  strg: sizetype lngt: 8       
+@98     integer_cst      type: @96     int: -1
+
